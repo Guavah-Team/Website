@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #DBD3CE;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: block;
+
+  background: #E5E5E5;
+  font-size: 30px;
+}
+
+.inner_header {
+  width: 1000px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo_container {
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.logo_container h2 {
+  color: #E76D6C;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: Cera-Pro;
+}
+
+.logo_container h1 span {
+
+}
+
+.nav {
+  float: right;
+  height: 100%;
+}
+
+.nav a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 30px;
+  color: black;
+}
+
+.nav a:hover{
+  color: #E76D6C;
+}
+
+.nav a li{
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  font-family: "Cera-Pro";
+  font-size: 20px;
+}
+
+.main_body{
+  /* background-image: linear-gradient(45deg, #E76D6C, #E76D6C); */
+  margin-top: 5%;
+}
+
+.inner_body {
+  background-image: linear-gradient(45deg, #E76D6C, #E76D6C);
+  max-height: 45%;
+  transform: skewY(-9deg);
+}
+
+.phoneimg {
+  max-height: 45%;
+  max-width: 20%;
+  padding: 30px;
+  padding-top: 0px;
+  padding-left: 100px;
+  vertical-align: top;
+  transform: translateY(-100px);
+  transform: skewY(9deg);
+}
+
+.app_description {
+  display: inline-block;
+  font-family: "Cera-Pro";
+  transform: skewY(0deg);
+  max-width: 50%;
+  float: right;
+  transform: translateY(-200px);
+}
+
+@font-face {
+  font-family: "Cera-Pro";
+  src: url('Cera_Pro_Medium.otf');
+}
