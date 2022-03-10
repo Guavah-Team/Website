@@ -1,3 +1,6 @@
+
+/* Styling for header */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,29 +12,29 @@ body {
   background-color: #DBD3CE;
 }
 
-.header {
+#container {
   width: 100%;
   height: 80px;
-  display: block;
 
   background: #E5E5E5;
   font-size: 30px;
 }
 
-.inner_header {
-  width: 1000px;
+header {
+  width: 100vw;
+  height: 100%;
+  border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+  font-family: Cera-Pro;
+}
+
+header .inner{
+  width: 100vw;
   height: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 0 2px;
 }
 
-.logo_container {
-  height: 100%;
-  display: table;
-  float: left;
-}
-
-.logo_container h2 {
+header .inner h1 {
   color: #E76D6C;
   height: 100%;
   display: table-cell;
@@ -39,20 +42,32 @@ body {
   font-family: Cera-Pro;
 }
 
-.logo_container h1 span {
-
+header .logo {
+  display: table;
+  height: 100%;
+  float: left;
 }
 
-.nav {
+header .logo div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logoAnchor:visited {
+  color: #E76D6C;
+}
+
+header nav {
   float: right;
   height: 100%;
 }
 
-.nav a{
+header nav li{
   height: 100%;
   display: table;
   float: left;
-  padding: 0px 30px;
+  padding: 0px 0px;
   color: black;
 }
 
@@ -68,10 +83,77 @@ body {
   font-size: 20px;
 }
 
-.main_body{
-  /* background-image: linear-gradient(45deg, #E76D6C, #E76D6C); */
-  margin-top: 5%;
+header nav span {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  background-color: #DBD3CE;
 }
+
+.hover:hover {
+  color: #000000;
+  filter: brightness(0.95);
+}
+
+header nav a {
+  color: #E76D6C;
+}
+
+header nav .button {
+  background-color: #DBD3CE;
+  padding: 11px 20px;
+  border-radius: 3px;
+}
+
+
+/*
+
+Styling for main body.
+
+*/
+
+/* Setup for grid view */
+.img-grid {
+  grid-area: image;
+  align-self: stretch;
+}
+
+.app-desc-grid {
+  grid-area: appDesc;
+  justify-self: center;
+  align-self: center;
+}
+
+.test-grid {
+  grid-area: testDiv;
+}
+
+#mainView{
+  /* background-image: linear-gradient(45deg, #E76D6C, #E76D6C); */
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "image image appDesc appDesc"
+    "testDiv testDiv testDiv testDiv";
+}
+
+.image-style {
+
+}
+
+.desc-style {
+
+}
+
+.test-style {
+    /* background-image: linear-gradient(45deg, #E76D6C, #E76D6C);
+    transform: skewY(-20deg); */
+}
+
 
 .inner_body {
   background-image: linear-gradient(45deg, #E76D6C, #E76D6C);
@@ -80,24 +162,24 @@ body {
 }
 
 .phoneimg {
-  max-height: 45%;
-  max-width: 20%;
+  max-height: 80%;
+  max-width: 50%;
   padding: 30px;
   padding-top: 0px;
   padding-left: 100px;
-  vertical-align: top;
-  transform: translateY(-100px);
-  transform: skewY(9deg);
+   vertical-align: top;
+  /* transform: translateY(-100px);
+  transform: skewY(9deg); */
 }
 
-.app_description {
+/* .app_description {
   display: inline-block;
   font-family: "Cera-Pro";
   transform: skewY(0deg);
   max-width: 50%;
   float: right;
   transform: translateY(-200px);
-}
+} */
 
 @font-face {
   font-family: "Cera-Pro";
