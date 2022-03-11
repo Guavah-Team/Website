@@ -1,0 +1,69 @@
+/*------------------------------------
+Font Imports
+------------------------------------*/
+@font-face {
+    font-family: ceraPro;
+    src: url(../assets/fonts/Cera_Pro_Bold.otf);
+  }
+
+  @font-face {
+    font-family: gigaSans;
+    src: url(../assets/fonts/GigaSans-Regular.otf);
+  }
+
+/*------------------------------------
+Core branding
+------------------------------------*/
+:root{
+    /*Colors*/
+    --brand-primary: #E76D6C;
+    --brand-secondary: #282A36;
+    --background: #F5F2F3;
+    --light-alt: #DBD3CE;
+    --dark-alt: #696164;
+
+    /*Fonts*/
+    --logo-type: ceraPro, sans-serif;
+    --header-type: ceraPro, sans-serif;
+    --text-type: gigaSans, sans-serif;
+}
+
+/*------------------------------------
+Core branding (components)
+------------------------------------*/
+.guavah-header-light{
+    font-family: var(--logo-type);
+    color: var(--background);
+    font-size: 3.5rem;
+    text-align: left;
+    text-transform: lowercase;
+}
+.guavah-header-primary{
+    font-family: var(--logo-type);
+    color: var(--brand-primary);
+    font-size: 3.5rem;
+    text-align: left;
+    text-transform: lowercase;
+}
+.guavah-header-secondary{
+    font-family: var(--logo-type);
+    color: var(--brand-secondary);
+    font-size: 3.5rem;
+    text-align: left;
+    text-transform: lowercase;
+}
+/*------------------------------------
+Scrollbar
+------------------------------------*/
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Scrollbar Track */
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  /* Scrollbar Handlle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--brand-secondary);
+    border-radius: 5px;
+  }

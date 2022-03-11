@@ -1,0 +1,82 @@
+html,body{
+    margin: 0;
+    overflow-y: auto;
+    overflow: overlay;
+}
+
+.promo-video {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+    object-fit: cover;
+}
+
+.promo-overlay{
+    position: relative;
+    z-index: 1;
+}
+
+#landing-page{
+    height: 100vh;
+    width: 100vw;
+    
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+
+    background-color: var(--dark-alt);
+}
+
+.home-tagline{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 9;
+}
+
+#about-page{
+    height: 100vh;
+    width: 100vw;
+    
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+
+    background-color: var(--brand-primary);
+}
+
+/*<img src="./assets/images/mockup.png" alt="Guavah Application Mockup">*/
+#about-two-page{
+    height: 75vh;
+    width: 100vw;
+    
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(1fr,12);
+    grid-template-rows: repeat(1fr, 12);
+
+    background-color: var(--background);
+}
+
+#download-page{
+    height: 100vh;
+    width: 100vw;
+    
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(1fr,12);
+    grid-template-rows: repeat(1fr, 12);
+
+    background-color: var(--brand-secondary);
+}
