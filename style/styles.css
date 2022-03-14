@@ -31,6 +31,7 @@ Core branding
 /*------------------------------------
 Core branding (components)
 ------------------------------------*/
+/*Headers*/
 .guavah-header-light{
     font-family: var(--logo-type);
     color: var(--background);
@@ -48,6 +49,95 @@ Core branding (components)
     color: var(--brand-secondary);
     font-size: 3.5rem;
     text-transform: lowercase;
+}
+
+/*Subheaders*/
+.guavah-subheader-light{
+    font-family: var(--text-type);
+    color: var(--background);
+    font-size: 2.2rem;
+    margin: 0;
+    text-transform: lowercase;
+    height: 2.2rem;
+}
+.guavah-subheader-primary{
+    font-family: var(--text-type);
+    color: var(--brand-primary);
+    font-size: 2.2rem;
+    margin: 0;
+    text-transform: lowercase;
+    height: 2.2rem;
+}
+.guavah-subheader-secondary{
+    font-family: var(--text-type);
+    color: var(--brand-secondary);
+    font-size: 2.2rem;
+    margin: 0;
+    text-transform: lowercase;
+    height: 2.2rem;
+}
+
+/*Buttons*/
+.guavah-button-outline-light{
+  display: inline-flex;
+  align-items: center; 
+  font-family: var(--text-type);
+  font-size: 1.3rem;
+  color: var(--background);
+  background: none;
+  border: 0.1em solid var(--background);
+  border-radius: 5px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+}
+
+/*Icon*/
+.guavah-icon-light{
+    font-family: var(--logo-type);
+    color: var(--brand-primary);
+    font-size: 3.0rem;
+    text-transform: lowercase;
+
+    background-color: var(--background);
+
+    border-radius: 20px;
+    width: 70px;
+    min-width: 70px;
+    height: 70px;
+    min-height: 70px;
+
+    text-align: center;
+}.guavah-icon-light > h3{
+    padding: 0px;
+    margin: 0px;
+    height: 3.0rem;
+    line-height: 3.0rem;
+}
+.guavah-icon-primary{
+    font-family: var(--logo-type);
+    color: var(--background);
+    font-size: 3.0rem;
+    text-transform: lowercase;
+
+    background-color: var(--brand-primary);
+
+    border-radius: 20px;
+    width: 70px;
+    min-width: 70px;
+    height: 70px;
+    min-height: 70px;
+
+    text-align: center;
+}.guavah-icon-primary > h3{
+    padding: 0px;
+    margin: 0px;
+    height: 3.0rem;
+    line-height: 3.0rem;
+}
+
+.space-left{
+  margin-left: 15px;
 }
 /*------------------------------------
 Scrollbar

@@ -4,6 +4,20 @@ html,body{
     overflow: overlay;
 }
 
+/*-------------------------------------
+LANDING PAGE DESIGN
+-------------------------------------*/
+#landing-page{
+    height: 100vh;
+    width: 100vw;
+    
+    display: grid;
+    place-content: center;
+
+    background-color: var(--brand-primary);
+}
+
+/*Background*/
 .promo-video {
     margin: 0;
     position: absolute;
@@ -17,26 +31,25 @@ html,body{
     transform: translate(-50%, -50%);
     -webkit-filter: brightness(50%);
     filter: brightness(50%);
-    object-fit: fill;
+    object-fit:initial;
+    overflow: hidden;
 }
 
+/*Forground*/
 .promo-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     position: relative;
     z-index: 1;
     text-align: center;
     white-space: nowrap;
 }
 
-#landing-page{
-    height: 100vh;
-    width: 100vw;
-    
-    display: grid;
-    place-content: center;
-
-    background-color: var(--dark-alt);
-}
-
+/*-------------------------------------
+ABOUT PAGE DESIGN
+-------------------------------------*/
 #about-page{
     height: 100vh;
     width: 100vw;
@@ -49,7 +62,26 @@ html,body{
     background-color: var(--brand-primary);
 }
 
+.best-places{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    white-space: nowrap;
+
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.about-best-places{
+    grid-column: 2 / 4;
+    grid-row: 4;
+}
 /*<img src="./assets/images/mockup.png" alt="Guavah Application Mockup">*/
+
+/*-------------------------------------
+ABOUT-TWO PAGE DESIGN
+-------------------------------------*/
 #about-two-page{
     height: 75vh;
     width: 100vw;
@@ -62,6 +94,9 @@ html,body{
     background-color: var(--background);
 }
 
+/*-------------------------------------
+DOWNLOAD PAGE DESIGN
+-------------------------------------*/
 #download-page{
     height: 100vh;
     width: 100vw;
