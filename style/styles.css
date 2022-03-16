@@ -53,7 +53,7 @@ Core branding (components)
 
 /*Subheaders*/
 .guavah-subheader-light{
-    font-family: var(--text-type);
+    font-family: var(--logo-type);
     color: var(--background);
     font-size: 2.2rem;
     margin: 0;
@@ -61,7 +61,7 @@ Core branding (components)
     height: 2.2rem;
 }
 .guavah-subheader-primary{
-    font-family: var(--text-type);
+    font-family: var(--logo-type);
     color: var(--brand-primary);
     font-size: 2.2rem;
     margin: 0;
@@ -69,6 +69,55 @@ Core branding (components)
     height: 2.2rem;
 }
 .guavah-subheader-secondary{
+    font-family: var(--logo-type);
+    color: var(--brand-secondary);
+    font-size: 2.2rem;
+    margin: 0;
+    text-transform: lowercase;
+    height: 2.2rem;
+}
+
+/*Normal Text*/
+.guavah-text-light{
+    font-family: var(--text-type);
+    color: var(--background);
+    font-size: 1.1rem;
+    margin: 0;
+    height: 2.2rem;
+}
+.guavah-text-primary{
+    font-family: var(--text-type);
+    color: var(--brand-primary);
+    font-size: 1.1rem;
+    margin: 0;
+    height: 2.2rem;
+}
+.guavah-text-secondary{
+    font-family: var(--text-type);
+    color: var(--brand-secondary);
+    font-size: 1.1rem;
+    margin: 0;
+    height: 2.2rem;
+}
+
+/*Emphasis*/
+.guavah-emphasis-light{
+    font-family: var(--text-type);
+    color: var(--background);
+    font-size: 2.2rem;
+    margin: 0;
+    text-transform: lowercase;
+    height: 2.2rem;
+}
+.guavah-emphasis-primary{
+    font-family: var(--text-type);
+    color: var(--brand-primary);
+    font-size: 2.2rem;
+    margin: 0;
+    text-transform: lowercase;
+    height: 2.2rem;
+}
+.guavah-emphasis-secondary{
     font-family: var(--text-type);
     color: var(--brand-secondary);
     font-size: 2.2rem;
@@ -136,8 +185,38 @@ Core branding (components)
     line-height: 3.0rem;
 }
 
-.space-left{
+/*Windows*/
+.guavah-feature-window{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*Icons*/
+.guavah-icon{
+   width: 64px;
+   height: 64px;
+}
+
+/*Spacers*/
+.guavah-space-left-small{
+  margin-left: 5px;
+}
+.guavah-space-left-medium{
   margin-left: 15px;
+}
+.guavah-space-left-large{
+  margin-left: 30px;
+}
+.guavah-space-top-small{
+  margin-top: 5px;
+}
+.guavah-space-top-medium{
+  margin-top: 15px;
+}
+.guavah-space-top-large{
+  margin-top: 30px;
 }
 /*------------------------------------
 Scrollbar
@@ -154,3 +233,53 @@ Scrollbar
     background: var(--brand-secondary);
     border-radius: 5px;
   }
+
+/*------------------------------------
+Animations
+------------------------------------*/
+.guavah-slide-in {
+	-webkit-animation: guavah-slide-in 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: guavah-slide-in 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  visibility: initial !important; 
+}
+
+@-webkit-keyframes guavah-slide-in {
+  0% {
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes guavah-slide-in {
+  0% {
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
