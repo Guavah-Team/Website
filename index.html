@@ -12,6 +12,57 @@
 </head>
 
 <body>
+    <header class="guavah-navbar">
+        <div class="guavah-navbar-logo">
+            <h1 class="guavah-logo-primary">guavah</h1>
+        </div>
+        <div class="guavah-navbar-content">
+
+            <button class="guavah-navbar-button" data-dropdown-button>Company</button>
+
+            <div class="guavah-navbar-dropdown" data-dropdown>
+                <button class="guavah-navbar-button products" data-dropdown-button>Products▾</button>
+                <div class="guavah-navbar-dropdown-menu guavah-dropdown-content" data-dropdown>
+                    <div class="products-dropdown-description">
+                        <h1 class="guavah-link-info">What we build</h1>
+                    </div>
+
+                    <div class="products-description">
+
+                        <div class="guavah-space-top-large">
+                            <div class="guavah-icon-holder">
+                                <img class="guavah-icon-nav" src="./assets/images/app.svg" />
+                            </div>
+
+                            <div class="guavah-space-left-medium">
+                                <a class="guavah-link">Guavah Application</a>
+                                <p class="guavah-link-description guavah-space-top-small">Rethinking restaurant
+                                    ratings.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="guavah-space-top-large">
+                            <div>
+                                <img class="guavah-icon-nav" src="./assets/images/api.svg" />
+                            </div>
+                            <div class="guavah-space-left-medium">
+                                <a href="#" class="guavah-link">Places API</a>
+                                <p class="guavah-link-description guavah-space-top-small">Efficient places data for
+                                    developers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="guavah-navbar-button" data-dropdown-button>Contact</button>
+
+            <div>
+                <button class="guavah-navbar-button" data-dropdown-button>Login</button>
+            </div>
+
+        </div>
+    </header>
+
     <!--Landing Page-->
     <section id="landing-page">
         <video autoplay muted playsinline loop class="promo-video">
@@ -50,7 +101,6 @@
 
     <!--About The Application 2-->
     <section id="about-two-page">
-
         <div class="about-two-header animate-me">
             <h2 class="guavah-subheader-primary">How It Works</h2>
             <p class="guavah-text-secondary guavah-space-top-medium">Find the best restaurants and join our community
@@ -58,37 +108,34 @@
         </div>
 
         <div class="guavah-feature-window about-window-1 animate-me">
-            <object class="guavah-icon" data="./assets/images/search.svg"></object>
+            <img class="guavah-icon" src="./assets/images/search.svg" />
             <h2 class="guavah-emphasis-secondary guavah-space-top-medium">Search</h2>
             <p class="guavah-text-secondary guavah-space-top-medium">Search using terms, categories, and price. Results
                 are sorted objectively.</p>
         </div>
         <div class="guavah-feature-window about-window-2 animate-me">
-            <object class="guavah-icon" data="./assets/images/review.svg"></object>
+            <img class="guavah-icon" src="./assets/images/review.svg" />
             <h2 class="guavah-emphasis-secondary guavah-space-top-medium">Review</h2>
             <p class="guavah-text-secondary guavah-space-top-medium">Review your experience at the restuarant using a
                 like or dislike along with a comment.</p>
         </div>
         <div class="guavah-feature-window about-window-3 animate-me">
-            <object class="guavah-icon" data="./assets/images/compare.svg"></object>
+            <img class="guavah-icon" src="./assets/images/compare.svg" />
             <h2 class="guavah-emphasis-secondary guavah-space-top-medium">Compare</h2>
             <p class="guavah-text-secondary guavah-space-top-medium">Compare different restaurants you've reviewed.
                 Selecting the better experience.</p>
         </div>
         <div class="guavah-feature-window about-window-4 animate-me">
-            <object class="guavah-icon" data="./assets/images/outcome.svg"></object>
+            <img class="guavah-icon" src="./assets/images/outcome.svg" />
             <h2 class="guavah-emphasis-secondary guavah-space-top-medium">Watch</h2>
             <p class="guavah-text-secondary guavah-space-top-medium">Watch as your comparison alters the restaurants
                 global
                 ranking.</p>
         </div>
     </section>
-    <!-- Last Page TBD -->
-    <section id="download-page">
-
-    </section>
 
     <script src="./script/viewport.js"></script>
+    <script src="./script/navbar.js"></script>
 </body>
 
 </html>

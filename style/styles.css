@@ -31,6 +31,26 @@ Core branding
 /*------------------------------------
 Core branding (components)
 ------------------------------------*/
+/*Logo*/
+.guavah-logo-light{
+    font-family: var(--logo-type);
+    color: var(--background);
+    font-size: 2.0rem;
+    text-transform: lowercase;
+}
+.guavah-logo-primary{
+    font-family: var(--logo-type);
+    color: var(--brand-primary);
+    font-size: 2.0rem;
+    text-transform: lowercase;
+}
+.guavah-logo-secondary{
+    font-family: var(--logo-type);
+    color: var(--brand-secondary);
+    font-size: 2.0rem;
+    text-transform: lowercase;
+}
+
 /*Headers*/
 .guavah-header-light{
     font-family: var(--logo-type);
@@ -77,29 +97,6 @@ Core branding (components)
     height: 2.2rem;
 }
 
-/*Normal Text*/
-.guavah-text-light{
-    font-family: var(--text-type);
-    color: var(--background);
-    font-size: 1.1rem;
-    margin: 0;
-    height: 2.2rem;
-}
-.guavah-text-primary{
-    font-family: var(--text-type);
-    color: var(--brand-primary);
-    font-size: 1.1rem;
-    margin: 0;
-    height: 2.2rem;
-}
-.guavah-text-secondary{
-    font-family: var(--text-type);
-    color: var(--brand-secondary);
-    font-size: 1.1rem;
-    margin: 0;
-    height: 2.2rem;
-}
-
 /*Emphasis*/
 .guavah-emphasis-light{
     font-family: var(--text-type);
@@ -124,6 +121,69 @@ Core branding (components)
     margin: 0;
     text-transform: lowercase;
     height: 2.2rem;
+}
+
+/*Normal Text*/
+.guavah-text-light{
+    font-family: var(--text-type);
+    color: var(--background);
+    font-size: 1.1rem;
+    margin: 0;
+    height: 1.1rem;
+}
+.guavah-text-primary{
+    font-family: var(--text-type);
+    color: var(--brand-primary);
+    font-size: 1.1rem;
+    margin: 0;
+    height: 1.1rem;
+}
+.guavah-text-secondary{
+    font-family: var(--text-type);
+    color: var(--brand-secondary);
+    font-size: 1.1rem;
+    margin: 0;
+    height: 1.1rem;
+}
+
+/*link*/
+.guavah-link{
+  font-family: var(--logo-type);
+  color: var(--brand-secondary);
+  font-size: 1.6rem;
+  text-transform: lowercase;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+.guavah-link-description{
+  font-family: var(--text-type);
+  color: var(--brand-secondary);
+  font-size: 1.0rem;
+  height: 1.0rem;
+  
+}
+.guavah-link-info{
+  font-family: var(--logo-type);
+  color: var(--brand-secondary);
+  font-size: 1.6rem;
+  text-transform: lowercase;
+  height: 2.0rem;
+  margin-bottom: 0;
+  text-decoration: none;
+  
+}
+
+.guavah-link:hover{
+  color: var(--brand-primary);
+}
+.guavah-link:hover + .guavah-link-description{
+  color: var(--brand-primary);
+}
+
+.guavah-link:hover + .guavah-link-description{
+  color: var(--brand-primary);
 }
 
 /*Buttons*/
@@ -197,6 +257,10 @@ Core branding (components)
 .guavah-icon{
    width: 64px;
    height: 64px;
+}
+.guavah-icon-nav{
+   width: 24px;
+   height: 24px;
 }
 
 /*Spacers*/
@@ -282,4 +346,111 @@ Animations
             filter: blur(0);
     opacity: 1;
   }
+}
+
+/*------------------------------------
+Navbar
+------------------------------------*/
+.guavah-navbar{
+  position: fixed;
+  z-index: 10;
+  height: 90px;
+  width: 100vw;
+
+  display: flex;
+
+  background-color: var(--background);
+}
+
+.guavah-navbar-logo{
+  width: 25%;
+  padding-left: 2rem;
+}
+
+.guavah-navbar-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  padding-right: 8em;
+  align-items: center;
+  width: 75%;
+}
+
+.guavah-navbar-dropdown{
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.guavah-navbar-dropdown-menu{
+  height: 45%;
+
+  position: fixed;
+  left: 0;
+  top: 90px;
+  width: 100vw;
+  background-color: var(--background);
+  padding: 2rem;
+
+  box-shadow: 0 6px 5px 0 rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/*Products Dropdown*/
+.guavah-dropdown-content{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(3, 33%);
+}
+
+.products-dropdown-description{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.products-description{
+  grid-column: 3/6;
+  grid-row: 1/4;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.products-description > div{
+  display: flex;
+}
+
+.guavah-navbar-holder{
+  height: 75%;
+}
+
+.guavah-navbar-dropdown.active > .products + .guavah-navbar-dropdown-menu{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.guavah-navbar-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  text-align: left;
+
+  font-family: var(--text-type);
+  color: var(--brand-secondary);
+  font-size: 1.3rem;
+  margin-right: 1.2rem;
+  height: 1.3rem;
+}
+.guavah-navbar-dropdown.active > .products,
+.guavah-navbar-button:hover{
+  color: var(--brand-primary);
+
+  transition: 0.4s;
 }
