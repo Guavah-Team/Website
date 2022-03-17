@@ -363,19 +363,28 @@ Navbar
 }
 
 .guavah-navbar-logo{
-  width: 25%;
+  width: 50%;
   padding-left: 2rem;
 }
 
 .guavah-navbar-content{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-
-  padding-right: 8em;
+  justify-content: space-evenly;
+  padding-right: 3em;
   align-items: center;
-  width: 75%;
+  width: 40%;
 }
+
+.guavah-navbar-content-login{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 3.3rem;
+  align-items: center;
+  width: 10%;
+}
+
 
 .guavah-navbar-dropdown{
   position: relative;
@@ -445,9 +454,31 @@ Navbar
   font-family: var(--text-type);
   color: var(--brand-secondary);
   font-size: 1.3rem;
-  margin-right: 1.2rem;
   height: 1.3rem;
 }
+
+.guavah-navbar-button-login{
+  background-color: var(--brand-primary);
+  border: none;
+  cursor: pointer;
+
+  text-align: left;
+
+  font-family: var(--text-type);
+  color: var(--background);
+  font-size: 1.2rem;
+  height: 1.5rem;
+  padding-right: 0.9rem;
+  padding-bottom: 0.2rem;
+
+  transition: box-shadow 0.4s;
+}
+
+.guavah-navbar-button-login:hover{
+  background-color: #e24f4e;
+  box-shadow: 5px 5px 0 0 rgba(231, 109, 108, 0.7);
+}
+
 .guavah-navbar-dropdown.active > .products,
 .guavah-navbar-button:hover{
   color: var(--brand-primary);
