@@ -99,7 +99,7 @@ ABOUT PAGE DESIGN
 ABOUT-TWO PAGE DESIGN
 -------------------------------------*/
 #about-two-page{
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     
     display: grid;
@@ -146,9 +146,9 @@ ABOUT-TWO PAGE DESIGN
     visibility: hidden;
 }
 /*-------------------------------------
-DOWNLOAD PAGE DESIGN
+ABOUT THREE PAGE DESIGN
 -------------------------------------*/
-#download-page{
+#about-three-page{
     height: 100vh;
     width: 100vw;
     
@@ -156,6 +156,11 @@ DOWNLOAD PAGE DESIGN
     place-content: center;
     grid-template-columns: repeat(1fr,12);
     grid-template-rows: repeat(1fr, 12);
+    
+    background-image: url('../assets/images/mockup2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
 
-    background-color: var(--brand-secondary);
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
 }
