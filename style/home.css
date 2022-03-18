@@ -91,8 +91,6 @@ ABOUT PAGE DESIGN
     grid-column: 7 / 12;
     grid-row: 2 / 9;
     object-fit: cover;
-
-    visibility: hidden;
 }
 
 /*-------------------------------------
