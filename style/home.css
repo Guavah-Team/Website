@@ -126,6 +126,12 @@ ABOUT-TWO PAGE DESIGN
     visibility: hidden;
 }
 
+.window-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about-window-1{
     grid-column: 2;
     grid-row: 4 / 9;

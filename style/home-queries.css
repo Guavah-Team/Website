@@ -1,0 +1,149 @@
+/*Small Browser Screens*/
+@media (max-width: 830px) {
+
+    html, body{
+        overflow-x: none !important;
+    }
+    body{
+        width: 100%;
+    }
+
+    /*Navbar*/
+    .guavah-navbar-button{
+        display: none;
+    }
+    .guavah-navbar-button-login{
+        display: none;
+    }
+    .guavah-navbar-button-hamburger{
+        display: flex !important; 
+    }
+
+    /*Landing Page*/
+    h1.guavah-header-light{
+        word-spacing: 100vw;
+        white-space: normal;
+        text-align: center;
+    }
+
+    /*About Page*/
+    .animation-best-places{
+        max-width: 250px;
+        grid-column: 8 / 12 !important;
+    }
+
+    /*About Two Page*/
+    .about-window-1{
+        grid-column: 2 / 6 !important;
+        grid-row: 4 / 6 !important;
+        text-align: left !important;
+    }
+
+    .about-window-2{
+        grid-column: 7/12 !important;
+        grid-row: 4 / 6 !important;
+        text-align: left !important;
+    }
+
+    .about-window-3{
+        grid-column: 2 / 6 !important;
+        grid-row: 7 / 9 !important;
+        text-align: left !important;
+    }
+
+    .about-window-4{
+        grid-column: 7/12 !important;
+        grid-row: 7 / 9 !important;
+        text-align: left !important;
+    }
+
+}
+
+/*Minimum Information - REALLY SMALL BROWSER SCREENS
+but mostly mobile devices and the like.*/
+@media (max-width: 400px) {
+
+    /*Landing Page*/
+    h1.guavah-header-light{
+        word-spacing: 100vw;
+        white-space: normal;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    /*about-one-page*/
+    .animation-best-places{
+        max-width: 250px;
+        grid-column: 4/10 !important;
+        grid-row: 7/10 !important;
+    }
+    .best-places{
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        
+
+        grid-column: 3 / 6;
+        grid-row: 2 !important;
+
+        visibility: hidden;
+        
+    }
+
+    h2.guavah-space-left-medium{
+        margin-left: 0px !important;
+        margin-top: 10px;
+    }
+
+    h2.guavah-emphasis-light{
+        font-size: 1.8rem !important;
+    }
+    .about-best-places{
+        display: flex;
+        grid-column: 3 / 12 !important;
+        grid-row: 4 !important;
+
+        visibility: hidden;
+        margin-top: 23px;
+    }
+
+    h2.guavah-space-top-medium{
+        margin-top: 0px !important;
+    }
+
+    /*about-two-page*/
+    #about-two-page{
+        min-height: 850px !important;
+        grid-template-rows: repeat(20, 5%) !important;
+    }
+
+    .window-header{
+        flex-direction: row !important;
+        align-items: flex-start !important;
+    }
+
+    .about-window-1{
+        grid-column: 2 / 12 !important;
+        grid-row: 6 / 7 !important;
+        text-align: left !important;
+    }
+
+    .about-window-2{
+        grid-column: 2/12 !important;
+        grid-row: 9 / 10 !important;
+        text-align: left !important;
+        margin-top: 8px !important;
+    }
+
+    .about-window-3{
+        grid-column: 2 / 12 !important;
+        grid-row: 13 / 14 !important;
+        text-align: left !important;
+    }
+
+    .about-window-4{
+        grid-column: 2/12 !important;
+        grid-row: 17 / 18 !important;
+        text-align: left !important;
+    }
+}
