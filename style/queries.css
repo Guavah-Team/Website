@@ -1,14 +1,66 @@
 /*Small Browser Screens*/
 @media (max-width: 830px) {
 
+    html, body{
+        overflow-x: none !important;
+    }
+    body{
+        width: 100%;
+    }
+
+    /*Navbar*/
+    .guavah-navbar-button{
+        display: none;
+    }
+    .guavah-navbar-button-login{
+        display: none;
+    }
+    .guavah-navbar-button-hamburger{
+        display: flex !important; 
+    }
+
     /*Landing Page*/
     h1.guavah-header-light{
         word-spacing: 100vw;
         white-space: normal;
         text-align: center;
     }
+
+    /*About Page*/
+    .animation-best-places{
+        max-width: 250px;
+        grid-column: 8 / 12 !important;
+    }
+
+    /*About Two Page*/
+    .about-window-1{
+        grid-column: 2 / 6 !important;
+        grid-row: 4 / 6 !important;
+        text-align: left !important;
+    }
+
+    .about-window-2{
+        grid-column: 7/12 !important;
+        grid-row: 4 / 6 !important;
+        text-align: left !important;
+    }
+
+    .about-window-3{
+        grid-column: 2 / 6 !important;
+        grid-row: 7 / 9 !important;
+        text-align: left !important;
+    }
+
+    .about-window-4{
+        grid-column: 7/12 !important;
+        grid-row: 7 / 9 !important;
+        text-align: left !important;
+    }
+
 }
 
+/*Minimum Information - REALLY SMALL BROWSER SCREENS
+but mostly mobile devices and the like.*/
 @media (max-width: 400px) {
 
     /*Landing Page*/
@@ -18,4 +70,7 @@
         text-align: center;
         font-size: 2.5rem;
     }
+
+    /*about-one-page*/
+    
 }

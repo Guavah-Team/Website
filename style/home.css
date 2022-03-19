@@ -10,13 +10,15 @@ LANDING PAGE DESIGN
 #landing-page{
     height: 100vh;
     width: 100vw;
+
+    min-height: 735px !important;
     
     display: grid;
     place-content: center;
 
     background-color: var(--brand-primary);
 
-    overflow: hidden;
+    
 }
 
 /*Background*/
@@ -35,6 +37,7 @@ LANDING PAGE DESIGN
     filter: brightness(68%);
     object-fit:initial;
     overflow: hidden;
+    min-height: 735px;
 }
 
 /*Forground*/
@@ -42,8 +45,13 @@ LANDING PAGE DESIGN
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    position: relative;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+
     z-index: 1;
     text-align: center;
     white-space: nowrap;
@@ -56,6 +64,8 @@ ABOUT PAGE DESIGN
     height: 75vh;
     width: 100vw;
     
+    min-height: 550px;
+
     display: grid;
     place-content: center;
     grid-template-columns: repeat(12,1fr);
@@ -100,6 +110,8 @@ ABOUT-TWO PAGE DESIGN
     height: 95vh;
     width: 100vw;
     
+    min-height: 695px;
+
     display: grid;
     place-content: center;
     grid-template-columns: repeat(12,1fr);
@@ -119,21 +131,18 @@ ABOUT-TWO PAGE DESIGN
 .about-window-1{
     grid-column: 2;
     grid-row: 4 / 9;
-
     visibility: hidden;
 }
 
 .about-window-2{
     grid-column: 5;
     grid-row: 4 / 9;
-
     visibility: hidden;
 }
 
 .about-window-3{
     grid-column: 8;
     grid-row: 4 / 9;
-
     visibility: hidden;
 }
 

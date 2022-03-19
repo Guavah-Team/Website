@@ -255,8 +255,8 @@ Core branding (components)
 
 /*Icons*/
 .guavah-icon{
-   width: 64px;
-   height: 64px;
+   width: 45px;
+   height: 45px;
 }
 .guavah-icon-nav{
    width: 24px;
@@ -455,6 +455,21 @@ Navbar
   color: var(--brand-secondary);
   font-size: 1.3rem;
   height: 1.3rem;
+}
+
+.guavah-navbar-button-hamburger{
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  text-align: left;
+
+  font-family: var(--text-type);
+  color: var(--brand-secondary);
+  font-size: 1.3rem;
+  height: 1.3rem;
+
+  display: none;
 }
 
 .guavah-navbar-button-login{
