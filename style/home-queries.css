@@ -61,7 +61,7 @@
 
 /*Minimum Information - REALLY SMALL BROWSER SCREENS
 but mostly mobile devices and the like.*/
-@media (max-width: 400px) {
+@media (max-width: 430px) {
 
     /*Landing Page*/
     h1.guavah-header-light{
