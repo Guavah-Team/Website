@@ -101,26 +101,26 @@ Core branding (components)
 .guavah-emphasis-light{
     font-family: var(--text-type);
     color: var(--background);
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     margin: 0;
     text-transform: lowercase;
-    height: 2.2rem;
+    line-height: 1.6rem;
 }
 .guavah-emphasis-primary{
     font-family: var(--text-type);
     color: var(--brand-primary);
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     margin: 0;
     text-transform: lowercase;
-    height: 2.2rem;
+    line-height: 1.6rem;
 }
 .guavah-emphasis-secondary{
     font-family: var(--text-type);
     color: var(--brand-secondary);
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     margin: 0;
     text-transform: lowercase;
-    height: 2.2rem;
+    line-height: 1.6rem;
 }
 
 /*Normal Text*/
@@ -261,6 +261,17 @@ Core branding (components)
 .guavah-icon-nav{
    width: 24px;
    height: 24px;
+}
+.guavah-profile{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px !important;
+  min-width: 75px;
+  min-height: 75px;
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 100%;
+  background-color: var(--background);
 }
 
 /*Spacers*/
@@ -482,9 +493,10 @@ Navbar
   font-family: var(--text-type);
   color: var(--background);
   font-size: 1.2rem;
-  height: 1.5rem;
-  padding-right: 0.9rem;
-  padding-bottom: 0.2rem;
+  line-height: 1.2rem;
+
+  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
 
   transition: box-shadow 0.4s;
 }
