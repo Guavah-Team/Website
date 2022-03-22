@@ -52,7 +52,7 @@
 }
 
 /*Small Browser Screens*/
-@media (max-width: 830px) {
+@media (max-width: 1025px) {
 
     html, body{
         overflow-x: none !important;
