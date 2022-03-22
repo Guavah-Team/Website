@@ -2,6 +2,10 @@ html,body{
     margin: 0;
     overflow-y: auto;
     overflow: overlay;
+    overflow-x: none !important;
+}
+body{
+    width: 100%;
 }
 
 /*-------------------------------------
