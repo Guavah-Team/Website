@@ -192,9 +192,10 @@ but mostly mobile devices and the like.*/
 
     /*about-one-page*/
     .animation-best-places{
-        max-width: 250px;
+        max-width: 250px !important;
+        max-width: 250px !important;
         grid-column: 4/10 !important;
-        grid-row: 7/10 !important;
+        grid-row: 4 !important;
     }
     .best-places{
         display: flex;
