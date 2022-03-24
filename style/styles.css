@@ -78,7 +78,7 @@ Core branding (components)
     font-size: 2.2rem;
     margin: 0;
     text-transform: lowercase;
-    height: 2.2rem;
+    line-height: 2.2rem;
 }
 .guavah-subheader-primary{
     font-family: var(--logo-type);
@@ -86,7 +86,7 @@ Core branding (components)
     font-size: 2.2rem;
     margin: 0;
     text-transform: lowercase;
-    height: 2.2rem;
+    line-height: 2.2rem;
 }
 .guavah-subheader-secondary{
     font-family: var(--logo-type);
@@ -94,7 +94,7 @@ Core branding (components)
     font-size: 2.2rem;
     margin: 0;
     text-transform: lowercase;
-    height: 2.2rem;
+    line-height: 2.2rem;
 }
 
 /*Emphasis*/
@@ -188,18 +188,27 @@ Core branding (components)
 
 /*Buttons*/
 .guavah-button-outline-light{
-  display: inline-flex;
   align-items: center; 
   font-family: var(--text-type);
   font-size: 1.3rem;
   color: var(--background);
   background: none;
   border: 0.1em solid var(--background);
-  border-radius: 5px;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0.2em;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: 0.4s;
 }
+
+.guavah-button-outline-light:hover{
+  background-color: rgba(219, 211, 206, 0.2);
+}
+
 
 /*Icon*/
 .guavah-icon-light{
@@ -272,6 +281,24 @@ Core branding (components)
   max-height: 80px;
   border-radius: 100%;
   background-color: var(--background);
+}
+
+.guavah-logo-symbol{
+  height: 300px;
+  width: 300px;
+}
+.guavah-logo-container{
+  max-width: 200px;
+  max-height: 200px;
+
+  display: grid;
+  place-content: center;
+
+  border-radius: 2rem;
+
+  overflow: hidden;
+
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.4);
 }
 
 /*Spacers*/
@@ -356,6 +383,43 @@ Animations
     -webkit-filter: blur(0);
             filter: blur(0);
     opacity: 1;
+  }
+}
+
+@keyframes button-hover {
+  0% {
+    border-top-color: var(--brand-primary);
+  }
+  10%{
+    border-right-color: var(--brand-primary);
+  }
+  20%{
+    border-bottom-color: var(--brand-primary);
+  }
+  30%{
+    border-left-color: var(--brand-primary);  
+  }
+  40% {
+    border-color: var(--brand-primary);
+  }
+
+  50% {
+    border-color: var(--brand-primary);
+    border-top-color: var(--background-color);
+  }
+  60% {
+    border-color: var(--brand-primary);
+    border-top-color: var(--background-color);
+    border-right-color: var(--background-color);
+  }
+  70% {
+    border-color: var(--brand-primary);
+    border-top-color: var(--background-color);
+    border-right-color: var(--background-color);
+    border-bottom-color: var(--background-color);
+  }
+  80% {
+    border-color: var(--background-color);
   }
 }
 
