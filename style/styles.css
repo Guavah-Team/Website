@@ -226,11 +226,7 @@ Core branding (components)
     min-height: 70px;
 
     text-align: center;
-}.guavah-icon-light > h3{
-    padding: 0px;
-    margin: 0px;
-    height: 3.0rem;
-    line-height: 3.0rem;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
 }
 .guavah-icon-primary{
     font-family: var(--logo-type);
@@ -247,11 +243,7 @@ Core branding (components)
     min-height: 70px;
 
     text-align: center;
-}.guavah-icon-primary > h3{
-    padding: 0px;
-    margin: 0px;
-    height: 3.0rem;
-    line-height: 3.0rem;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
 }
 
 /*Windows*/

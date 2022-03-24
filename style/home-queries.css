@@ -273,18 +273,19 @@ but mostly mobile devices and the like.*/
 
     .window-header{
         flex-direction: row !important;
-        align-items: flex-start !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
     }
 
     .about-window-1{
         grid-column: 2 / 12 !important;
-        grid-row: 6 / 7 !important;
+        grid-row: 5 / 6 !important;
         text-align: left !important;
     }
 
     .about-window-2{
         grid-column: 2/12 !important;
-        grid-row: 9 / 10 !important;
+        grid-row: 8 / 10 !important;
         text-align: left !important;
         margin-top: 8px !important;
     }
@@ -317,5 +318,12 @@ but mostly mobile devices and the like.*/
     }
     .user4{
         visibility: hidden !important;
+    }
+}
+
+/*Specific for the download Page*/
+@media (max-width: 393px) {
+    h2.guavah-header-primary{
+        font-size: 3.0rem !important;
     }
 }
