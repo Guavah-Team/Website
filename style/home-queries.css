@@ -178,6 +178,13 @@
 
 }
 
+@media (max-width: 670px) {
+    .promo-video {
+        object-fit:cover !important;
+    }
+
+}
+
 /*Specific for the download Page*/
 @media (max-width: 776px) {
     .download-badges{
