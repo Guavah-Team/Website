@@ -325,12 +325,8 @@ but mostly mobile devices and the like.*/
     .user4{
         visibility: hidden !important;
     }
-}
-
-/*Specific for the download Page*/
-@media (max-width: 393px) {
-
+    
     h2.guavah-header-primary{
-        font-size: 3.0rem !important;
+        font-size: 2.8rem !important;
     }
 }
