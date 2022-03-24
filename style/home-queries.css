@@ -58,7 +58,7 @@
         overflow-x: none !important;
     }
     body{
-        width: 100%;
+        width: 100% !important;
     }
 
     /*Navbar*/
@@ -313,6 +313,12 @@ but mostly mobile devices and the like.*/
 
 /*Specific for the download Page*/
 @media (max-width: 415px) {
+    html, body{
+        overflow-x: hidden !important;
+    }
+    body{
+        width: 100% !important;
+    }
     .user8{
         visibility: hidden !important;
     }
@@ -323,6 +329,7 @@ but mostly mobile devices and the like.*/
 
 /*Specific for the download Page*/
 @media (max-width: 393px) {
+
     h2.guavah-header-primary{
         font-size: 3.0rem !important;
     }
