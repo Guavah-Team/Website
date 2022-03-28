@@ -172,7 +172,6 @@ Core branding (components)
   height: 2.0rem;
   margin-bottom: 0;
   text-decoration: none;
-  
 }
 
 .guavah-link:hover{
@@ -202,7 +201,7 @@ Core branding (components)
 
   cursor: pointer;
 
-  transition: 0.4s;
+  transition: color,border,background-color 0.4s;
 }
 
 .guavah-button-outline-light:hover{
@@ -432,6 +431,8 @@ Navbar
 .guavah-navbar-logo{
   width: 50%;
   padding-left: 2rem;
+  position: relative;
+  z-index: 20;
 }
 
 .guavah-navbar-content{
@@ -524,21 +525,6 @@ Navbar
   height: 1.3rem;
 }
 
-.guavah-navbar-button-hamburger{
-  background: none;
-  border: none;
-  cursor: pointer;
-
-  text-align: left;
-
-  font-family: var(--text-type);
-  color: var(--brand-secondary);
-  font-size: 1.3rem;
-  height: 1.3rem;
-
-  display: none;
-}
-
 .guavah-navbar-button-login{
   background-color: var(--brand-primary);
   border: none;
@@ -566,5 +552,124 @@ Navbar
 .guavah-navbar-button:hover{
   color: var(--brand-primary);
 
-  transition: 0.4s;
+  transition: color 0.4s;
+}
+
+.guavah-navbar-button-hamburger{
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  text-align: left;
+
+  font-family: var(--text-type);
+  color: var(--brand-secondary);
+  font-size: 1.3rem;
+  height: 1.3rem;
+
+  position: relative;
+  z-index: 20;
+
+  display: none;
+}
+
+.guavah-navbar-hamburger{
+  background-color: var(--background);
+  font-family: var(--text-type);
+  color: var(--brand-secondary);
+
+  position: fixed;
+  height: 0vh;
+  z-index: 10;
+
+  width: 100vw;
+  transition: height 0.4s ease-in;
+  opacity: 0;
+
+  right: 0;
+  top: 90px;
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.guavah-navbar-hamburger.expanded{
+  opacity: 1;
+  height: 50vh;
+  transition: opacity 0.4s ease-in;
+}
+
+.guavah-hamburger-header{
+  font-family: var(--logo-type);
+  color: var(--brand-secondary);
+  font-size: 1.6rem;
+  text-transform: lowercase;
+  height: 2.0rem;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.guavah-hamburger-link{
+  font-family: var(--logo-type);
+  color: var(--brand-secondary);
+  font-size: 1.6rem;
+  text-transform: lowercase;
+  height: 2.0rem;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.guavah-hamburger-link-small{
+  font-family: var(--logo-type);
+  color: var(--brand-secondary);
+  font-size: 1.2rem;
+  text-transform: lowercase;
+  height: 1.2rem;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.guavah-hamburger-link:hover{
+  color: var(--brand-primary);
+}
+.guavah-hamburger-link:hover + .guavah-link-description{
+  color: var(--brand-primary);
+}
+
+.guavah-hamburger-link:hover + .guavah-link-description{
+  color: var(--brand-primary);
+}
+
+.guavah-hamburger-link-small:hover{
+  color: var(--brand-primary);
+}
+.guavah-hamburger-link-small:hover + .guavah-link-description{
+  color: var(--brand-primary);
+}
+
+.guavah-hamburger-link-small:hover + .guavah-link-description{
+  color: var(--brand-primary);
+}
+
+.product{
+    padding-left: 0.5rem;
+}
+
+.company{
+  grid-column: 1/3;
+  grid-row: 1;
+  padding-left: 2.2rem;
+}
+
+.products{
+  grid-column: 1/3;
+  grid-row: 2/4;
+  padding-left: 2.2rem;
+}
+
+.contact{
+  grid-column: 1/3;
+  grid-row: 4;
+  padding-left: 2.2rem;
 }

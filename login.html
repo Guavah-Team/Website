@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/login-queries.css">
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <title>Guavah - Login</title>
+</head>
+
+<body>
+    <header class="guavah-navbar">
+        <div class="guavah-navbar-logo">
+            <h1 class="guavah-logo-primary">guavah</h1>
+        </div>
+        <div class="guavah-navbar-content">
+
+            <button class="guavah-navbar-button" data-dropdown-button>Company</button>
+
+            <div class="guavah-navbar-dropdown" data-dropdown>
+                <button class="guavah-navbar-button products" data-dropdown-button>Products▾</button>
+                <div class="guavah-navbar-dropdown-menu guavah-dropdown-content" data-dropdown>
+                    <div class="products-dropdown-description">
+                        <h1 class="guavah-link-info">What we build</h1>
+                    </div>
+
+                    <div class="products-description">
+
+                        <div class="guavah-space-top-large">
+                            <div class="guavah-icon-holder">
+                                <img class="guavah-icon-nav" src="./assets/images/app.svg" />
+                            </div>
+
+                            <div class="guavah-space-left-medium">
+                                <a href="index.html" class="guavah-link">Guavah Application</a>
+                                <p class="guavah-link-description guavah-space-top-small">Rethinking restaurant
+                                    ratings.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="guavah-space-top-large">
+                            <div>
+                                <img class="guavah-icon-nav" src="./assets/images/api.svg" />
+                            </div>
+                            <div class="guavah-space-left-medium">
+                                <a href="#" class="guavah-link">Places API</a>
+                                <p class="guavah-link-description guavah-space-top-small">Efficient places data for
+                                    developers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="guavah-navbar-button" data-dropdown-button>Contact</button>
+            <div class="guavah-navbar-dropdown" data-dropdown>
+                <button class="guavah-navbar-button products" data-dropdown-button>Follow▾</button>
+                <div class="guavah-navbar-dropdown-menu guavah-dropdown-content" data-dropdown>
+                    <div class="products-dropdown-description">
+                        <!-- TODO change CSS classes to acually be accurate (it says products-dropdown; should be social-dropdown, etc.) -->
+                        <h1 class="guavah-link-info">Our Social Media</h1>
+                    </div>
+                    <div class="products-description">
+
+                        <div class="guavah-space-top-large">
+                            <div class="guavah-icon-holder">
+                                <img class="guavah-icon-nav"
+                                    src=".\assets\images\1298747_instagram_brand_logo_social media.svg" />
+                            </div>
+
+                            <div class="guavah-space-left-medium">
+                                <a class="guavah-link" href="https://www.instagram.com/guavah.app/"
+                                    target="_blank">Guavah.app</a>
+                                <p class="guavah-link-description guavah-space-top-small">Instagram</p>
+                            </div>
+                        </div>
+
+                        <div class="guavah-space-top-large">
+                            <div class="guavah-icon-holder">
+                                <img class="guavah-icon-nav" src=".\assets\images\1298778_youtube_video_play.svg" />
+                            </div>
+
+                            <div class="guavah-space-left-medium">
+                                <a class="guavah-link">Guavah Youtube</a>
+                                <p class="guavah-link-description guavah-space-top-small">Youtube</p>
+                            </div>
+                        </div>
+
+                        <div class="guavah-space-top-large">
+                            <div class="guavah-icon-holder">
+                                <img class="guavah-icon-nav" src=".\assets\images\1298749_linkedin.svg" />
+                            </div>
+
+                            <div class="guavah-space-left-medium">
+                                <a class="guavah-link">Guavah LinkedIn</a>
+                                <p class="guavah-link-description guavah-space-top-small">LinkedIn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="guavah-navbar-content-login">
+            <button onclick="location.href='login.html'" class="guavah-navbar-button-login"
+                data-dropdown-button>Login</button>
+            <button class="guavah-navbar-button-hamburger" data-dropdown-button>☰</button>
+        </div>
+    </header>
+
+    <script src=" ./script/viewport.js"></script>
+    <script src="./script/navbar.js"></script>
+    <script src="./script/buttons.js"></script>
+</body>
+
+</html>

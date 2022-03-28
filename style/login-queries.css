@@ -1,0 +1,30 @@
+/*Medium Browser Screens*/
+@media (max-width: 1355px) {
+
+}
+
+/*Small Browser Screens*/
+@media (max-width: 1025px) {
+
+    html, body{
+        overflow-x: none !important;
+    }
+    body{
+        width: 100% !important;
+    }
+
+    /*Navbar*/
+    .guavah-navbar-button{
+        display: none;
+    }
+    .guavah-navbar-button-login{
+        display: none;
+    }
+    .guavah-navbar-button-hamburger{
+        display: flex !important; 
+    }
+}
+
+@media (max-width: 430px) {
+
+}

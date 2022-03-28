@@ -18,3 +18,18 @@ document.addEventListener('click', e => {
         dropdown.classList.remove('active')
     })
 })
+
+function toggleHamburger() {
+
+    const sideNav = document.getElementsByClassName("guavah-navbar-hamburger")[0];
+    const sideNavButton = document.getElementsByClassName("guavah-navbar-button-hamburger")[0];
+
+    if (!sideNav.classList.contains("expanded")) {
+        sideNav.classList.add("expanded")
+        sideNavButton.innerHTML = "🞪"
+    }
+    else {
+        sideNav.classList.remove("expanded")
+        sideNavButton.innerHTML = "☰"
+    }
+}
