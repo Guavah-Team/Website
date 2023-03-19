@@ -2,13 +2,13 @@
 Font Imports
 ------------------------------------*/
 @font-face {
-    font-family: ceraPro;
-    src: url(../assets/fonts/Cera_Pro_Bold.otf);
+    font-family: titleFont;
+    src: url(../assets/fonts/VisbyCF-Bold.otf);
   }
 
   @font-face {
-    font-family: gigaSans;
-    src: url(../assets/fonts/GigaSans-Regular.otf);
+    font-family: textFont;
+    src: url(../assets/fonts/VisbyCF-Regular.otf);
   }
 
 /*------------------------------------
@@ -23,9 +23,9 @@ Core branding
     --dark-alt: #696164;
 
     /*Fonts*/
-    --logo-type: ceraPro, sans-serif;
-    --header-type: ceraPro, sans-serif;
-    --text-type: gigaSans, sans-serif;
+    --logo-type: titleFont, sans-serif;
+    --header-type: titleFont, sans-serif;
+    --text-type: textFont, sans-serif;
 }
 
 /*------------------------------------
@@ -43,6 +43,18 @@ Core branding (components)
     color: var(--brand-primary);
     font-size: 2.0rem;
     text-transform: lowercase;
+}
+.guavah-logo-large-primary{
+  font-family: var(--logo-type);
+  color: var(--brand-primary);
+  font-size: 4.0rem;
+  text-transform: lowercase;
+}
+.guavah-logo-large-light{
+  font-family: var(--logo-type);
+  color: var(--background);
+  font-size: 4.0rem;
+  text-transform: lowercase;
 }
 .guavah-logo-secondary{
     font-family: var(--logo-type);
@@ -187,25 +199,37 @@ Core branding (components)
 
 /*Buttons*/
 .guavah-button-outline-light{
+
   align-items: center; 
   font-family: var(--text-type);
   font-size: 1.3rem;
   color: var(--background);
-  background: none;
-  border: 0.1em solid var(--background);
+  background: var(--brand-primary);
+  
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0.2em;
-
+  padding-bottom: 0.2em;
+  
+  border-radius: 0.7em;
+  border: 0.1em solid var(--brand-primary);
   text-decoration: none;
 
   cursor: pointer;
 
-  transition: color,border,background-color 0.4s;
+  transition: all 0.4s;
 }
 
 .guavah-button-outline-light:hover{
-  background-color: rgba(219, 211, 206, 0.2);
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  border-radius: 0.8em;
+
+}
+
+.guavah-button-outline-light:active{
+  padding-left: 0.9em;
+  padding-right: 0.9em;
 }
 
 
@@ -271,7 +295,6 @@ Core branding (components)
   max-width: 80px;
   max-height: 80px;
   border-radius: 100%;
-  background-color: var(--background);
 }
 
 .guavah-logo-symbol{

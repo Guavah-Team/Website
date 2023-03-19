@@ -23,7 +23,7 @@ LANDING PAGE DESIGN
     display: grid;
     place-content: center;
 
-    background-color: var(--brand-primary);
+    background-color: var(--brand-secondary);
 }
 
 /*Background*/
@@ -38,9 +38,9 @@ LANDING PAGE DESIGN
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    -webkit-filter: brightness(68%);
-    filter: brightness(68%);
-    object-fit:initial;
+    -webkit-filter: brightness(100%);
+    filter: blur(2px) brightness(60%);
+    object-fit:cover;
     overflow: hidden;
     min-height: 735px;
 }
@@ -57,11 +57,32 @@ LANDING PAGE DESIGN
     transform: translate(-50%, -50%);
     position: absolute;
 
-    z-index: 1;
-    text-align: center;
+    z-index: 2;
+    text-align: left;
     white-space: nowrap;
 }
 
+.darken-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    position: absolute;
+
+    z-index: 1;
+    text-align: center;
+    white-space: nowrap;
+    background: var(--brand-secondary);
+}
 /*-------------------------------------
 ABOUT PAGE DESIGN
 -------------------------------------*/
@@ -289,6 +310,7 @@ DOWNLOAD PAGE Design
 
     grid-column: 2/13;
     grid-row: 5;
+    padding-top: 1rem;
 
     visibility: hidden;
 }
